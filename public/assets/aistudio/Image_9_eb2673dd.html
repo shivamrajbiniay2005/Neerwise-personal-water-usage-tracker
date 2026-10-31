@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#006970", "on-primary-fixed-variant": "#004f54", "surface-container-lowest": "#090e17", "on-secondary-fixed-variant": "#004b74", "inverse-surface": "#dee2f0", "primary": "#dbfcff", "surface-container": "#1a2029", "secondary": "#94ccff", "tertiary": "#d3fff7", "on-tertiary-fixed": "#00201d", "outline": "#849495", "on-tertiary-container": "#006b62", "error-container": "#93000a", "on-primary": "#00363a", "surface-container-high": "#252a34", "surface-tint": "#00dbe9", "surface-dim": "#0e141d", "secondary-container": "#0378b7", "on-primary-fixed": "#002022", "tertiary-container": "#7fecde", "on-error-container": "#ffdad6", "inverse-primary": "#006970", "error": "#ffb4ab", "surface-bright": "#343944", "on-secondary-fixed": "#001d32", "on-surface": "#dee2f0", "on-secondary": "#003352", "on-background": "#dee2f0", "tertiary-fixed": "#89f5e7", "surface": "#0e141d", "primary-fixed": "#7df4ff", "surface-container-highest": "#30353f", "on-error": "#690005", "on-surface-variant": "#b9cacb", "tertiary-fixed-dim": "#6bd8cb", "secondary-fixed-dim": "#94ccff", "surface-variant": "#30353f", "inverse-on-surface": "#2b313b", "on-tertiary-fixed-variant": "#005049", "outline-variant": "#3b494b", "surface-container-low": "#161c25", "background": "#0e141d", "primary-container": "#00f0ff", "on-secondary-container": "#f5f8ff", "secondary-fixed": "#cde5ff", "primary-fixed-dim": "#00dbe9", "on-tertiary": "#003732" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "margin-desktop": "3rem", "space-xl": "2.5rem", "margin": "2rem", "gutter": "1.5rem", "space-md": "1rem", "space-2xl": "4rem", "gutter-lg": "2rem" }, "fontFamily": { "headline-lg": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "label-caps": [ "JetBrains Mono" ], "body-sm": [ "Hanken Grotesk" ], "telemetry-value-lg": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "label-sm": [ "Hanken Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "body-md": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "display-hero": [ "Space Grotesk" ], "telemetry-value-md": [ "JetBrains Mono" ] }, "fontSize": { "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "telemetry-value-lg": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "telemetry-value-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="che project logo.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XFosMbKlhrLKkfME6e-ea5sRb-KYrHRduRCdWGJfjh4iQHzGYjpVW6eyhMrnVtDDhSnuKDm7qm75VeaOyDfhZOFd-4GlSmueWgdA7EzR8eZRh9N_LU_7px2ufcCUA3qNAZeBRGQjE3Ydpcb6nkuyESeF6pWVMc7GJKlemUy0xhX1zOSXUIf83fYmfEQw22VwyzLgRSZR3-lAJdxN77D5btkbpcER7-MCcAQdftI_I37-KZHoGDo8JCV6_kFbsqL_t2hjShPA82auY"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">Neerwise</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider hidden sm:inline-block">Know Your Water. Save Every Drop.</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.35)]"><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="dashboard" href="#">Dashboard</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="water-usage-tracker" href="#">Water Usage Tracker</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="analytics-&amp;-insights" href="#">Analytics &amp; Insights</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="water-saving-coach" href="#">Water Saving Coach</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="challenges-&amp;-achievements" href="#">Challenges &amp; Achievements</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="profile" href="#">Profile</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="settings" href="#">Settings</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="about-neerwise" href="#">About Neerwise</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-primary-fixed uppercase">Grid Sync Active</span></div><button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-label-sm font-semibold hover:bg-primary-fixed-dim transition-all shadow-[0_0_16px_rgba(0,240,255,0.3)]" type="button"><span class="material-symbols-outlined text-[16px]">water_drop</span><span>Quick Log</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 flex-1 bg-background"><div class="flex flex-col w-full">
+<!-- Dynamic Glowing Header & Ambient Backdrop -->
+<div class="relative w-full overflow-hidden pb-space-xl">
+<!-- Subtle oceanic glow blurs behind content -->
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/2 right-10 w-80 h-80 bg-secondary-container/15 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="px-margin-desktop py-space-xl max-w-[1680px] mx-auto w-full flex flex-col gap-space-2xl">
+<!-- Screen Overline & Header Cluster -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xs rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-widest">District 4 Reputation Protocol • Community Stewardship League</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">
+            Challenges &amp; Achievements
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Engage in community conservation sprints, build sustained water-saving streaks, and unlock certified municipal stewardship badges verified by real-time acoustic transducers.
+          </p>
+</div>
+<!-- Action Group -->
+<div class="flex flex-wrap items-center gap-space-sm self-start xl:self-end">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high/90 hover:bg-surface-container-highest text-on-surface font-headline-sm text-body-sm transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">leaderboard</span>
+<span>View Community Leaderboard</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high/90 hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-headline-sm text-body-sm transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>League Rules &amp; Scoring</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold hover:bg-primary-fixed-dim transition-all shadow-[0_0_24px_rgba(0,240,255,0.35)]">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Join New Challenge</span>
+</button>
+</div>
+</div>
+<!-- Top Metric Overview Grid (4 Glass Slabs) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Metric 1: Streak -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Active Conservation Streak</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/30 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs pt-space-xs">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-primary tracking-tight">12</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-medium">Days</span>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">trending_up</span>
+<span>Personal Record: <strong class="text-on-surface font-telemetry-value-md text-label-sm">18 Days</strong> (&lt;135 L/d)</span>
+</div>
+<!-- Sparkline Indicator line -->
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-space-sm overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary-container rounded-full" style="width: 66.6%;"></div>
+</div>
+</div>
+<!-- Metric 2: Badges -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Badges Unlocked</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs pt-space-xs">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-on-surface tracking-tight">14</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">/ 24</span>
+</div>
+<div class="mt-space-md flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-primary-fixed font-headline-sm text-label-sm font-semibold">Tier: Gold Guardian</span>
+<span class="font-label-caps text-label-caps text-secondary">3 In Progress</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-space-sm overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-tertiary-fixed rounded-full" style="width: 58.3%;"></div>
+</div>
+</div>
+<!-- Metric 3: Standing -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Community Standing</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs pt-space-xs">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-primary tracking-tight">Top 4%</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant font-medium">District</span>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim">pin_drop</span>
+<span>Rank <strong class="text-primary font-telemetry-value-md text-label-sm">#42</strong> of 1,420 households</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-space-sm overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 96%;"></div>
+</div>
+</div>
+<!-- Metric 4: Spared Volume -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Total Spared Volume</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/30 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs pt-space-xs">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-primary-fixed tracking-tight">1,240</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium">Liters</span>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">eco</span>
+<span class="truncate">Contributed to Colorado Basin Preservation</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-space-sm overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container to-primary-container rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+</div>
+<!-- Section 1: Active Weekly & Seasonal Challenges -->
+<div class="flex flex-col gap-space-lg">
+<!-- Header & Filter Tabs -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-6 bg-primary-container rounded-full"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+              Active Weekly &amp; Seasonal Challenges
+            </h2>
+</div>
+<div class="flex items-center p-1 rounded-xl bg-surface-container-low shadow-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-primary font-headline-sm text-label-sm font-semibold shadow-sm transition-all">
+              Active (3)
+            </button>
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-body-sm text-label-sm transition-all">
+              Upcoming (2)
+            </button>
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-body-sm text-label-sm transition-all">
+              Completed Sprints (12)
+            </button>
+</div>
+</div>
+<!-- Challenge Cards Mosaic / Bento Flow -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Challenge 1: Featured Hero Sprint (8 cols) -->
+<div class="lg:col-span-8 relative overflow-hidden rounded-xl bg-surface-container/80 backdrop-blur-xl p-space-xl shadow-lg flex flex-col justify-between gap-space-lg">
+<!-- Atmospheric Gradient Arc inside Card -->
+<div class="absolute -right-16 -top-16 w-72 h-72 bg-gradient-to-br from-primary-container/15 via-secondary-container/5 to-transparent rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-primary-container/15 text-primary font-label-caps text-label-caps">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span>Day 5 of 7 • Active Now • 86% Sector Success Rate</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span>
+<span>348 households participating in Sector 4</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Sprint Challenge 03</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+                  The 4-Minute Shower Vanguard
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                  Shorten personal rinse durations using real-time hydro-acoustic valve listeners. Keep every shower session under 240 seconds for 7 consecutive days to qualify for municipal eco-tariff credits.
+                </p>
+</div>
+<!-- Progress & Milestones Bar -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-label-caps text-label-caps">
+<span class="text-on-surface font-semibold">Streak Progress: 5 / 7 Days Met</span>
+<span class="text-primary-fixed font-telemetry-value-md text-label-sm">71.4% COMPLETE</span>
+</div>
+<!-- Stepped Bar Track -->
+<div class="grid grid-cols-7 gap-space-xs h-3 w-full bg-surface-container-lowest p-0.5 rounded-lg">
+<div class="bg-primary-container rounded-sm shadow-[0_0_8px_rgba(0,240,255,0.6)]"></div>
+<div class="bg-primary-container rounded-sm shadow-[0_0_8px_rgba(0,240,255,0.6)]"></div>
+<div class="bg-primary-container rounded-sm shadow-[0_0_8px_rgba(0,240,255,0.6)]"></div>
+<div class="bg-primary-container rounded-sm shadow-[0_0_8px_rgba(0,240,255,0.6)]"></div>
+<div class="bg-primary-container rounded-sm shadow-[0_0_8px_rgba(0,240,255,0.6)] animate-pulse"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-caps text-[10px]">
+<span>Mon (3m 42s)</span>
+<span>Tue (3m 15s)</span>
+<span>Wed (3m 50s)</span>
+<span>Thu (2m 58s)</span>
+<span class="text-primary-fixed">Today (Pending)</span>
+<span>Sat</span>
+<span>Sun</span>
+</div>
+</div>
+<!-- Reward Badges Preview -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-sm text-on-surface font-semibold">Triton Vanguard</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Tier 2 Badge</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[24px]">speed</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-sm text-on-surface font-semibold">+5.0 Score Bonus</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Water Score Impact</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">price_check</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-sm text-on-surface font-semibold">Eco-Tariff Rebate</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">District Utility Credit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md border-none relative z-10">
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-label-sm font-semibold hover:bg-primary-fixed-dim transition-all shadow-[0_0_16px_rgba(0,240,255,0.3)]">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+<span>Log Today's Shower Time</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-headline-sm text-label-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+<span>Challenge Feed &amp; Tips</span>
+</button>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Ends in 48 Hours 12 Mins</span>
+</div>
+</div>
+<!-- Vertical Stack of 2 Challenges (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<!-- Challenge Card 2: Zero Micro-Leak Lockdown -->
+<div class="p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-caps text-[10px] tracking-wider uppercase">Sprint 30-D</span>
+<span class="font-label-caps text-label-caps text-primary-fixed">63% Met</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-on-surface font-semibold">Zero Micro-Leak Lockdown</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Maintain 0 unverified baseline flow spikes detected by acoustic transducers during low-frequency nightly monitoring hours.
+                </p>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-caps text-label-caps text-on-surface-variant">
+<span>Day 19 of 30</span>
+<span class="text-primary">0 Spikes Recorded</span>
+</div>
+<div class="w-full h-2 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 63.3%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px] text-tertiary">shield</span>
+<span>Sentinel Seal + 250 Pts</span>
+</div>
+<button class="px-space-sm py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary-fixed font-headline-sm text-label-sm transition-all">
+                  Verify Diagnostics
+                </button>
+</div>
+</div>
+<!-- Challenge Card 3: Weekend Graywater Stewardship -->
+<div class="p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-container/20 text-tertiary-fixed font-label-caps text-[10px] tracking-wider uppercase">Starts in 2 Days</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Sat 08:00 UTC</span>
+</div>
+<h4 class="font-headline-md text-headline-sm text-on-surface font-semibold">Weekend Graywater Stewardship</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Divert at least 40 Liters of non-detergent vegetable rinse or dehumidifier reservoir water to planter beds and balcony gardening.
+                </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">yard</span>
+<span class="font-body-sm text-label-sm text-on-surface">Target: ≥ 40L Recycled</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary font-semibold">+180 Credits</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-label-caps text-primary-fixed flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Enrolled &amp; Ready</span>
+</span>
+<button class="px-space-sm py-space-xs rounded-lg bg-surface-container-high/60 text-on-surface-variant font-headline-sm text-label-sm hover:text-on-surface transition-all">
+                  Guidelines
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Achievement Badges & Personal Milestones -->
+<div class="flex flex-col gap-space-lg pt-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-6 bg-tertiary-container rounded-full"></div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+                Achievement Badges &amp; Personal Milestones
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Cryptographically validated milestones generated from acoustic telemetry, smart metering, and consumption efficiency.
+              </p>
+</div>
+</div>
+<!-- Category Filter Bar -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-space-sm py-space-xs rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-label-sm font-semibold shadow-sm">
+              All (24)
+            </button>
+<button class="px-space-sm py-space-xs rounded-lg bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface font-body-sm text-label-sm">
+              Conservation Milestones (8)
+            </button>
+<button class="px-space-sm py-space-xs rounded-lg bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface font-body-sm text-label-sm">
+              Sensor &amp; Technology (6)
+            </button>
+<button class="px-space-sm py-space-xs rounded-lg bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface font-body-sm text-label-sm">
+              Community &amp; Sprints (6)
+            </button>
+<button class="px-space-sm py-space-xs rounded-lg bg-surface-container-high/80 text-on-surface-variant hover:text-on-surface font-body-sm text-label-sm">
+              Legendary (4)
+            </button>
+</div>
+</div>
+<!-- Badges Grid: 8 Cards (Mix of Unlocked, In-Progress, Locked) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Badge 1: Aqua Guardian (Unlocked) -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md flex flex-col justify-between gap-space-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-caps text-[10px] tracking-wider uppercase font-semibold">Gold Tier</span>
+<span class="font-label-caps text-[10px] text-tertiary-fixed font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> UNLOCKED
+              </span>
+</div>
+<!-- Emblem Visual -->
+<div class="flex flex-col items-center text-center gap-space-sm py-space-xs">
+<div class="relative w-20 h-20 rounded-full bg-gradient-to-tr from-surface-container-highest via-secondary-container/40 to-primary-container/30 flex items-center justify-center shadow-[0_0_24px_rgba(0,240,255,0.25)]">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-[34px] text-primary-container" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Aqua Guardian</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Maintained sustained Water Score &gt;85 for 14 continuous days.
+                </p>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-label-caps text-[11px] bg-surface-container-low/70 p-space-xs rounded-lg">
+<span>Unlocked: Oct 14, 2024</span>
+<span class="text-primary-fixed font-semibold">+350 PTS</span>
+</div>
+</div>
+<!-- Badge 2: Acoustic Sentinel (Unlocked) -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md flex flex-col justify-between gap-space-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-caps text-[10px] tracking-wider uppercase font-semibold">Platinum Tier</span>
+<span class="font-label-caps text-[10px] text-tertiary-fixed font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> UNLOCKED
+              </span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-sm py-space-xs">
+<div class="relative w-20 h-20 rounded-full bg-gradient-to-tr from-surface-container-highest via-primary-container/20 to-secondary/30 flex items-center justify-center shadow-[0_0_24px_rgba(56,189,248,0.25)]">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-[34px] text-secondary" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Acoustic Sentinel</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Zero undetected pipe leaks for 30 consecutive days via IoT transducers.
+                </p>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-label-caps text-[11px] bg-surface-container-low/70 p-space-xs rounded-lg">
+<span>Unlocked: Nov 02, 2024</span>
+<span class="text-secondary font-semibold">+500 PTS</span>
+</div>
+</div>
+<!-- Badge 3: Flow Minimalist (Unlocked) -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md flex flex-col justify-between gap-space-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-caps text-[10px] tracking-wider uppercase font-semibold">Silver Tier</span>
+<span class="font-label-caps text-[10px] text-tertiary-fixed font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> UNLOCKED
+              </span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-sm py-space-xs">
+<div class="relative w-20 h-20 rounded-full bg-gradient-to-tr from-surface-container-highest via-tertiary/20 to-primary-container/20 flex items-center justify-center shadow-[0_0_20px_rgba(127,236,222,0.2)]">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-[34px] text-tertiary" style="font-variation-settings: 'FILL' 1;">opacity</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Flow Minimalist</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Logged a full residential day under 80 Liters total gross consumption.
+                </p>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-label-caps text-[11px] bg-surface-container-low/70 p-space-xs rounded-lg">
+<span>Unlocked: Nov 19, 2024</span>
+<span class="text-tertiary font-semibold">+220 PTS</span>
+</div>
+</div>
+<!-- Badge 4: Triton Vanguard (In Progress) -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md flex flex-col justify-between gap-space-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-caps text-[10px] tracking-wider uppercase font-semibold">Gold Tier</span>
+<span class="font-label-caps text-[10px] text-primary font-semibold flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span> 71% IN PROGRESS
+              </span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-sm py-space-xs">
+<div class="relative w-20 h-20 rounded-full bg-surface-container-high flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-[34px] text-primary" style="font-variation-settings: 'FILL' 1;">timer</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Triton Vanguard</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Complete 7 consecutive days of &lt;4-minute verified showers.
+                </p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-caps text-[11px] text-on-surface-variant">
+<span>5 / 7 Days Done</span>
+<span class="text-primary-fixed">2 Days Left</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 71.4%;"></div>
+</div>
+</div>
+</div>
+<!-- Badge 5: Drip Master (Unlocked) -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md flex flex-col justify-between gap-space-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-caps text-[10px] tracking-wider uppercase font-semibold">Bronze Tier</span>
+<span class="font-label-caps text-[10px] text-tertiary-fixed font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> UNLOCKED
+              </span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-sm py-space-xs">
+<div class="relative w-20 h-20 rounded-full bg-gradient-to-tr from-surface-container-highest via-tertiary-container/20 to-primary-container/20 flex items-center justify-center shadow-[0_0_16px_rgba(127,236,222,0.15)]">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-[34px] text-tertiary" style="font-variation-settings: 'FILL' 1;">potted_plant</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Drip Master</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Converted balcony/garden watering to automated micro-drip cycles.
+                </p>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-label-caps text-[11px] bg-surface-container-low/70 p-space-xs rounded-lg">
+<span>Unlocked: Sep 28, 2024</span>
+<span class="text-tertiary font-semibold">+150 PTS</span>
+</div>
+</div>
+<!-- Badge 6: Centurion Saver (Unlocked) -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md flex flex-col justify-between gap-space-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary font-label-caps text-[10px] tracking-wider uppercase font-semibold">Gold Tier</span>
+<span class="font-label-caps text-[10px] text-tertiary-fixed font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> UNLOCKED
+              </span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-sm py-space-xs">
+<div class="relative w-20 h-20 rounded-full bg-gradient-to-tr from-secondary-container/40 via-primary-container/25 to-surface-container-highest flex items-center justify-center shadow-[0_0_24px_rgba(0,240,255,0.25)]">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-[34px] text-primary" style="font-variation-settings: 'FILL' 1;">savings</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Centurion Saver</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Accumulated 1,000+ total spared Liters vs municipal average baseline.
+                </p>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-label-caps text-[11px] bg-surface-container-low/70 p-space-xs rounded-lg">
+<span>Unlocked: Nov 24, 2024</span>
+<span class="text-primary font-semibold">+400 PTS</span>
+</div>
+</div>
+<!-- Badge 7: Hydrological Pioneer (In Progress 82%) -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-md flex flex-col justify-between gap-space-md transition-all hover:translate-y-[-2px]">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-caps text-[10px] tracking-wider uppercase font-semibold">Silver Tier</span>
+<span class="font-label-caps text-[10px] text-secondary font-semibold flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> 82% IN PROGRESS
+              </span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-sm py-space-xs">
+<div class="relative w-20 h-20 rounded-full bg-surface-container-high flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-[34px] text-secondary">sensors</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Hydrological Pioneer</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Connect 5+ acoustic fixture sensor nodes. Currently telemetry synced: 3 / 5.
+                </p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-caps text-[11px] text-on-surface-variant">
+<span>3 / 5 Nodes Active</span>
+<span class="text-secondary font-semibold">82% Sync Score</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+</div>
+<!-- Badge 8: District Champion (Locked) -->
+<div class="relative group p-space-lg rounded-xl bg-surface-container/40 backdrop-blur-xl shadow-sm flex flex-col justify-between gap-space-md opacity-70 hover:opacity-100 transition-all">
+<div class="flex items-start justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-caps text-[10px] tracking-wider uppercase font-semibold">Legendary</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">lock</span> LOCKED
+              </span>
+</div>
+<div class="flex flex-col items-center text-center gap-space-sm py-space-xs">
+<div class="relative w-20 h-20 rounded-full bg-surface-container-lowest/80 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[34px] text-outline">emoji_events</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface-variant font-bold">District Champion</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Reach Top 1% in Sector 4 municipal conservation rankings for full month.
+                </p>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-label-caps text-[11px] bg-surface-container-lowest/60 p-space-xs rounded-lg">
+<span>Current: Top 4%</span>
+<span class="text-outline font-semibold">+1,000 PTS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Sector 4 Conservation Leaderboard & Municipal Impact -->
+<div class="flex flex-col gap-space-md pt-space-lg pb-space-2xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-6 bg-secondary-container rounded-full"></div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+                Sector 4 Conservation Leaderboard &amp; Municipal Impact
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Live cryptographically verified rankings cross-referenced against smart municipal metering grids.
+              </p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant self-start sm:self-auto flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-ping"></span>
+            Sync Frequency: 15s
+          </span>
+</div>
+<!-- Horizontal Comparison Table / Glass Panel -->
+<div class="w-full overflow-x-auto rounded-xl bg-surface-container/75 backdrop-blur-xl shadow-lg">
+<table class="w-full text-left border-collapse min-w-[720px]">
+<thead>
+<tr class="bg-surface-container-high/80 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-space-md px-space-lg">Standing</th>
+<th class="py-space-md px-space-lg">Household / Station Node</th>
+<th class="py-space-md px-space-lg text-center">Neerwise Score</th>
+<th class="py-space-md px-space-lg text-center">Spared Volume (30D)</th>
+<th class="py-space-md px-space-lg text-center">Active Streak</th>
+<th class="py-space-md px-space-lg text-right">District Tier</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface">
+<!-- Rank 1 -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm font-bold flex items-center justify-center shadow-sm">1</span>
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">military_tech</span>
+</div>
+</td>
+<td class="py-space-md px-space-lg font-headline-sm text-body-md font-semibold text-on-surface">
+                  Solaris Pod A
+                  <span class="block font-label-caps text-[11px] text-on-surface-variant font-normal">Node: #SLR-092-A • Automated Cistern</span>
+</td>
+<td class="py-space-md px-space-lg text-center font-telemetry-value-md text-telemetry-value-md text-primary-fixed font-bold">
+                  96
+                </td>
+<td class="py-space-md px-space-lg text-center font-telemetry-value-md text-body-md text-primary">
+                  2,840 L
+                </td>
+<td class="py-space-md px-space-lg text-center font-label-caps text-label-caps text-on-surface-variant">
+                  48 Days
+                </td>
+<td class="py-space-md px-space-lg text-right">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-caps text-[10px] font-semibold">Emerald Tier</span>
+</td>
+</tr>
+<!-- Rank 2 -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary font-headline-sm text-label-sm font-bold flex items-center justify-center">2</span>
+</div>
+</td>
+<td class="py-space-md px-space-lg font-headline-sm text-body-md font-semibold text-on-surface">
+                  EcoNest 402
+                  <span class="block font-label-caps text-[11px] text-on-surface-variant font-normal">Node: #ECN-402 • Graywater Heat Exchanger</span>
+</td>
+<td class="py-space-md px-space-lg text-center font-telemetry-value-md text-telemetry-value-md text-secondary font-bold">
+                  94
+                </td>
+<td class="py-space-md px-space-lg text-center font-telemetry-value-md text-body-md text-primary">
+                  2,610 L
+                </td>
+<td class="py-space-md px-space-lg text-center font-label-caps text-label-caps text-on-surface-variant">
+                  31 Days
+                </td>
+<td class="py-space-md px-space-lg text-right">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-caps text-[10px] font-semibold">Gold Tier</span>
+</td>
+</tr>
+<!-- Rank 3: Vance Residence (Current User) Highlighted Row -->
+<tr class="bg-primary-container/10 hover:bg-primary-container/15 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm font-bold flex items-center justify-center shadow-[0_0_8px_rgba(0,240,255,0.6)]">3</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-caps text-[9px] font-bold uppercase">YOU</span>
+</div>
+</td>
+<td class="py-space-md px-space-lg font-headline-sm text-body-md font-semibold text-primary">
+                  Vance Residence
+                  <span class="block font-label-caps text-[11px] text-on-surface-variant font-normal">Node: #VNC-104-T • 3 Acoustic IoT Valves</span>
+</td>
+<td class="py-space-md px-space-lg text-center font-telemetry-value-md text-telemetry-value-md text-primary-fixed font-bold">
+                  88
+                </td>
+<td class="py-space-md px-space-lg text-center font-telemetry-value-md text-body-md text-primary-container font-bold">
+                  1,240 L
+                </td>
+<td class="py-space-md px-space-lg text-center font-label-caps text-label-caps text-primary">
+                  12 Days (Active)
+                </td>
+<td class="py-space-md px-space-lg text-right">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-caps text-[10px] font-semibold shadow-sm">Top 4% District</span>
+</td>
+</tr>
+<!-- Rank 4 -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant font-headline-sm text-label-sm font-bold flex items-center justify-center">4</span>
+</div>
+</td>
+<td class="py-space-md px-space-lg font-headline-sm text-body-md font-semibold text-on-surface">
+                  GreenHaven Villa
+                  <span class="block font-label-caps text-[11px] text-on-surface-variant font-normal">Node: #GHV-018 • Micro-Drip Zone Submeter</span>
+</td>
+<td class="py-space-md px-space-lg text-center font-telemetry-value-md text-telemetry-value-md text-on-surface font-bold">
+                  87
+                </td>
+<td class="py-space-md px-space-lg text-center font-telemetry-value-md text-body-md text-on-surface">
+                  1,180 L
+                </td>
+<td class="py-space-md px-space-lg text-center font-label-caps text-label-caps text-on-surface-variant">
+                  9 Days
+                </td>
+<td class="py-space-md px-space-lg text-right">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-[10px] font-semibold">Silver Tier</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="p-space-md bg-surface-container-lowest/80 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span>All progress and rankings are cryptographically anchored against recorded smart meter and acoustic telemetry data.</span>
+</div>
+<a class="text-primary hover:text-primary-fixed-dim font-headline-sm text-label-sm font-semibold transition-colors flex items-center gap-0.5" href="#">
+<span>View Full 1,420 Sector Households</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] mt-auto"><div class="w-full px-margin-desktop py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">Neerwise</span><span class="text-on-surface-variant font-body-sm text-body-sm">Telemetry Platform</span></div><div class="flex items-center gap-space-lg font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" data-path="about-neerwise" href="#">About</a><a class="hover:text-primary transition-colors" data-path="settings" href="#">Security</a><a class="hover:text-primary transition-colors" data-path="analytics-&amp;-insights" href="#">Compliance Metrics</a></div><div class="font-label-caps text-label-caps text-on-surface-variant">© 2025 Neerwise Systems Inc. All rights reserved.</div></div></footer></body></html>

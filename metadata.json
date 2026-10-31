@@ -1,0 +1,6 @@
+{
+  "name": "Neerwise Water Score",
+  "description": "Know Your Water. Save Every Drop. High-precision water stewardship platform with real-time tracking, hydro-telemetry analytics, conservation coaching, and sovereign water score intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

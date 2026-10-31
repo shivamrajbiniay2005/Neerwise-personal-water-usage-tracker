@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#006970", "on-primary-fixed-variant": "#004f54", "surface-container-lowest": "#090e17", "on-secondary-fixed-variant": "#004b74", "inverse-surface": "#dee2f0", "primary": "#dbfcff", "surface-container": "#1a2029", "secondary": "#94ccff", "tertiary": "d3fff7", "on-tertiary-fixed": "#00201d", "outline": "#849495", "on-tertiary-container": "#006b62", "error-container": "#93000a", "on-primary": "#00363a", "surface-container-high": "#252a34", "surface-tint": "#00dbe9", "surface-dim": "#0e141d", "secondary-container": "#0378b7", "on-primary-fixed": "#002022", "tertiary-container": "#7fecde", "on-error-container": "#ffdad6", "inverse-primary": "#006970", "error": "#ffb4ab", "surface-bright": "#343944", "on-secondary-fixed": "#001d32", "on-surface": "#dee2f0", "on-secondary": "#003352", "on-background": "#dee2f0", "tertiary-fixed": "#89f5e7", "surface": "#0e141d", "primary-fixed": "#7df4ff", "surface-container-highest": "#30353f", "on-error": "#690005", "on-surface-variant": "#b9cacb", "tertiary-fixed-dim": "#6bd8cb", "secondary-fixed-dim": "#94ccff", "surface-variant": "#30353f", "inverse-on-surface": "#2b313b", "on-tertiary-fixed-variant": "#005049", "outline-variant": "#3b494b", "surface-container-low": "#161c25", "background": "#0e141d", "primary-container": "#00f0ff", "on-secondary-container": "#f5f8ff", "secondary-fixed": "#cde5ff", "primary-fixed-dim": "#00dbe9", "on-tertiary": "#003732" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "margin-desktop": "3rem", "space-xl": "2.5rem", "margin": "2rem", "gutter": "1.5rem", "space-md": "1rem", "space-2xl": "4rem", "gutter-lg": "2rem" }, "fontFamily": { "headline-lg": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "label-caps": [ "JetBrains Mono" ], "body-sm": [ "Hanken Grotesk" ], "telemetry-value-lg": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "label-sm": [ "Hanken Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "body-md": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "display-hero": [ "Space Grotesk" ], "telemetry-value-md": [ "JetBrains Mono" ] }, "fontSize": { "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "telemetry-value-lg": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "telemetry-value-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex items-center justify-center p-margin-mobile"><main class="w-full max-w-md bg-surface-container-low rounded-xl p-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col w-full items-center justify-center relative">
+<!-- Subtle Ambient Glow in Background -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header Branding Section -->
+<div class="flex flex-col items-center text-center mb-space-lg relative z-10">
+<div class="relative w-16 h-16 mb-space-sm rounded-xl overflow-hidden shadow-lg shadow-primary-container/10 bg-surface-container-highest flex items-center justify-center p-1">
+<img alt="Neerwise Logo" class="w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpp8apX_jBppaSVRrOWKvswn-g4Iz3U-Spn8sDS-WnL6_MS2oz8ySLUGrIVgELFyuHalSn_8AEayfgLdEXIGuq2UVAr8qqlbvkhLDCAtuRAi9uNOIIDFVfyHB6KA2m2dUgWKH538D_1ct3iOv-j09TIlQtnVqSCjfqQ656iytbKa-NPSt46O7u0fsM_OxT7k_W_Ugiygdg_oFrCcw0jg6anxqjAo5gyuPgmnjcfxejkbX12Vxbim73puc-46vUySPCA7w"/>
+</div>
+<!-- Live Telemetry Status Pill -->
+<div class="inline-flex items-center gap-space-xs px-2.5 py-0.5 rounded-full bg-primary-container/10 text-primary-fixed-dim font-label-caps text-label-caps mb-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+<span>HYDRO INTELLIGENCE PLATFORM</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+      Join the Water Conservation Movement
+    </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">
+      Pioneer high-precision planetary stewardship. Real-time telemetry, acoustic leak detection, and sovereign water scores.
+    </p>
+</div>
+<!-- Form Content -->
+<form class="w-full flex flex-col gap-y-4 relative z-10" id="registration-form" onsubmit="event.preventDefault();">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase flex items-center justify-between" for="fullname">
+<span>Full Name</span>
+<span class="text-outline text-[10px]">VERIFIED ID</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">badge</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder-outline rounded-lg focus:outline-none focus:bg-surface-container shadow-inner" id="fullname" placeholder="Dr. Samantha Vance" required="" type="text"/>
+</div>
+</div>
+<!-- Email Address -->
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase flex items-center justify-between" for="email">
+<span>Email Address</span>
+<span class="text-outline text-[10px]">COMM LINK</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">mail</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder-outline rounded-lg focus:outline-none focus:bg-surface-container shadow-inner" id="email" placeholder="s.vance@hydro-grid.org" required="" type="email"/>
+</div>
+</div>
+<!-- Household Size & Dynamic Baseline Selector -->
+<div class="grid grid-cols-1 gap-4">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase flex items-center justify-between" for="household">
+<span>Household Size</span>
+<span class="text-primary-fixed-dim text-[10px]">RESIDENTIAL QUOTA</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">groups</span>
+<select class="w-full pl-10 pr-8 py-2.5 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg appearance-none focus:outline-none focus:bg-surface-container cursor-pointer shadow-inner" id="household" onchange="updateAllowanceRecommendation(this.value)">
+<option value="1">1 Person (Single Dwelling)</option>
+<option selected="" value="2-3">2–3 People (Standard Urban Pod)</option>
+<option value="4+">4+ People (Extended Compound)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Target Daily Allowance with Interactive Tooltip and Baseline Score -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase flex items-center gap-1.5" for="water-target">
+<span>Daily Water Allowance</span>
+<!-- Interactive Tooltip Trigger -->
+<button aria-label="Water target impact guide" class="group relative inline-flex items-center text-outline hover:text-primary-container focus:outline-none" type="button">
+<span class="material-symbols-outlined text-[15px]">info</span>
+<!-- Tooltip Panel -->
+<span class="pointer-events-none opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-surface-container-highest text-on-surface rounded-lg shadow-xl text-left z-30 font-body-sm text-body-sm">
+<span class="font-headline-sm text-headline-sm text-primary flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">speed</span>
+                  Initial Score Logic
+                </span>
+                Targeting below the regional mean (&lt;135L) sets your Initial Hydro Score to 88/100, unlocking Tier 1 municipal conservation rebates immediately.
+              </span>
+</button>
+</label>
+<span class="font-label-caps text-label-caps text-primary-container bg-surface-container px-1.5 py-0.5 rounded" id="target-badge">
+            135 L/day/person
+          </span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">water_drop</span>
+<input class="w-full pl-10 pr-16 py-2.5 bg-surface-container-lowest text-on-surface font-telemetry-value-md text-telemetry-value-md placeholder-outline rounded-lg focus:outline-none focus:bg-surface-container shadow-inner" id="water-target" max="500" min="50" oninput="syncScorePreview(this.value)" required="" type="number" value="135"/>
+<span class="absolute right-3 font-label-caps text-label-caps text-outline pointer-events-none">L/DAY</span>
+</div>
+</div>
+</div>
+<!-- Hydro Score Visual Impact Bar -->
+<div class="p-3 bg-surface-container-lowest rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps">
+<span class="flex items-center gap-1 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[14px]">insights</span>
+          INITIAL WATER SCORE FORECAST
+        </span>
+<span class="font-telemetry-value-md text-telemetry-value-md text-primary-container" id="score-readout">88<span class="text-xs text-outline font-normal">/100</span></span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-gradient-to-r from-secondary-container via-surface-tint to-primary-container rounded-full transition-all duration-300" id="score-meter" style="width: 88%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-outline" id="score-hint">
+        Target calibrated to WHO recommended conservation baseline.
+      </p>
+</div>
+<!-- Passwords -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase" for="password">Password</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">lock</span>
+<input class="w-full pl-10 pr-3 py-2.5 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder-outline rounded-lg focus:outline-none focus:bg-surface-container shadow-inner" id="password" placeholder="••••••••" required="" type="password"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase" for="confirm-password">Confirm Password</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">lock_reset</span>
+<input class="w-full pl-10 pr-3 py-2.5 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder-outline rounded-lg focus:outline-none focus:bg-surface-container shadow-inner" id="confirm-password" placeholder="••••••••" required="" type="password"/>
+</div>
+</div>
+</div>
+<!-- Checkbox Pledge -->
+<div class="flex items-start gap-2.5 pt-1">
+<label class="relative flex items-center justify-center cursor-pointer mt-0.5">
+<input class="peer sr-only" id="pledge-check" required="" type="checkbox"/>
+<div class="w-4 h-4 bg-surface-container-lowest rounded flex items-center justify-center peer-checked:bg-primary-container transition-colors shadow-inner">
+<span class="material-symbols-outlined text-[14px] text-on-primary-fixed opacity-0 peer-checked:opacity-100 font-bold">check</span>
+</div>
+</label>
+<label class="font-body-sm text-body-sm text-on-surface-variant select-none cursor-pointer" for="pledge-check">
+        I agree to the <a class="text-primary-container hover:underline" href="#">Conservation Pledge</a> and <a class="text-primary-container hover:underline" href="#">Terms of Service</a>.
+      </label>
+</div>
+<!-- Primary Action: Radiant Cyan Pulse -->
+<button class="w-full py-3 px-6 mt-2 rounded-lg bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-fixed font-headline-sm text-headline-sm tracking-wide shadow-lg shadow-primary-container/20 hover:shadow-primary-container/40 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">water</span>
+<span>Create Neerwise Account</span>
+</button>
+<!-- Divider -->
+<div class="relative flex items-center justify-center my-1">
+<div class="w-full h-px bg-surface-container-highest"></div>
+<span class="absolute bg-surface-container-low px-3 font-label-caps text-label-caps text-outline uppercase tracking-widest">or authenticate with</span>
+</div>
+<!-- Google Alternative Sign-in Button -->
+<button class="w-full py-2.5 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-md flex items-center justify-center gap-3 transition-colors shadow-sm" type="button">
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span>Continue with Google</span>
+</button>
+</form>
+<!-- Card Footer -->
+<div class="mt-space-lg text-center pt-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Already have an account? 
+      <a class="text-primary-container hover:underline font-semibold ml-1" href="#">Sign In</a>
+</p>
+</div>
+</div>
+<script>
+  function updateAllowanceRecommendation(val) {
+    const targetInput = document.getElementById('water-target');
+    const badge = document.getElementById('target-badge');
+    if (val === '1') {
+      targetInput.value = 110;
+      badge.textContent = '110 L/day (Solo Pod)';
+    } else if (val === '2-3') {
+      targetInput.value = 135;
+      badge.textContent = '135 L/day/person';
+    } else {
+      targetInput.value = 160;
+      badge.textContent = '160 L/day/person';
+    }
+    syncScorePreview(targetInput.value);
+  }
+
+  function syncScorePreview(liters) {
+    const l = parseFloat(liters) || 0;
+    const scoreReadout = document.getElementById('score-readout');
+    const scoreMeter = document.getElementById('score-meter');
+    const scoreHint = document.getElementById('score-hint');
+
+    // Dynamic formula: lower target yields higher initial score
+    let score = Math.round(100 - (l - 50) * 0.28);
+    score = Math.max(20, Math.min(99, score));
+
+    scoreReadout.innerHTML = score + '<span class="text-xs text-outline font-normal">/100</span>';
+    scoreMeter.style.width = score + '%';
+
+    if (score >= 85) {
+      scoreHint.textContent = 'Superior baseline: Maximum conservation tier unlocked.';
+      scoreHint.className = 'font-body-sm text-body-sm text-primary-container';
+    } else if (score >= 65) {
+      scoreHint.textContent = 'Optimal baseline: WHO recommended urban consumption.';
+      scoreHint.className = 'font-body-sm text-body-sm text-outline';
+    } else {
+      scoreHint.textContent = 'Elevated consumption profile: Lower targets yield higher ratings.';
+      scoreHint.className = 'font-body-sm text-body-sm text-secondary';
+    }
+  }
+</script></main></body></html>

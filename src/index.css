@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container-lowest: #090e17;
+  --color-surface-container-low: #161c25;
+  --color-surface-container: #1a2029;
+  --color-surface-container-high: #252a34;
+  --color-surface-container-highest: #30353f;
+  --color-surface: #0e141d;
+  --color-surface-bright: #343944;
+  --color-surface-dim: #0e141d;
+  --color-surface-tint: #00dbe9;
+  --color-background: #0e141d;
+  --color-on-background: #dee2f0;
+  --color-on-surface: #dee2f0;
+  --color-on-surface-variant: #b9cacb;
+  --color-outline: #849495;
+  --color-outline-variant: #3b494b;
+  --color-primary: #dbfcff;
+  --color-primary-container: #00f0ff;
+  --color-on-primary: #00363a;
+  --color-on-primary-container: #006970;
+  --color-primary-fixed: #7df4ff;
+  --color-primary-fixed-dim: #00dbe9;
+  --color-secondary: #94ccff;
+  --color-secondary-container: #0378b7;
+  --color-on-secondary: #003352;
+  --color-tertiary: #d3fff7;
+  --color-tertiary-container: #7fecde;
+  --color-tertiary-fixed: #89f5e7;
+  --color-tertiary-fixed-dim: #6bd8cb;
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+  --color-on-error: #690005;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-space-2xl: 4rem;
+  --spacing-margin-mobile: 1rem;
+  --spacing-margin: 2rem;
+  --spacing-margin-desktop: 3rem;
+  --spacing-gutter-sm: 1rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-lg: 2rem;
+
+  --font-headline-lg: "Space Grotesk", sans-serif;
+  --font-headline-md: "Space Grotesk", sans-serif;
+  --font-headline-sm: "Space Grotesk", sans-serif;
+  --font-display-hero: "Space Grotesk", sans-serif;
+  --font-body-lg: "Hanken Grotesk", sans-serif;
+  --font-body-md: "Hanken Grotesk", sans-serif;
+  --font-body-sm: "Hanken Grotesk", sans-serif;
+  --font-label-sm: "Hanken Grotesk", sans-serif;
+  --font-label-caps: "JetBrains Mono", monospace;
+  --font-telemetry-value-lg: "JetBrains Mono", monospace;
+  --font-telemetry-value-md: "JetBrains Mono", monospace;
+}
+
+@layer utilities {
+  .font-display-hero {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+  .text-display-hero {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .font-headline-lg {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  .text-headline-lg {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .font-headline-md {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .text-headline-md {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .font-headline-sm {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+  }
+  .text-headline-sm {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .font-body-lg {
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .text-body-lg {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .font-body-md {
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .text-body-md {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .font-body-sm {
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+  .text-body-sm {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .font-telemetry-value-lg {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .text-telemetry-value-lg {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .font-telemetry-value-md {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .text-telemetry-value-md {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .font-label-caps {
+    font-family: "JetBrains Mono", monospace;
+    letter-spacing: 0.12em;
+  }
+  .text-label-caps {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .text-label-sm {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+/* Material Symbols fill utility */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}

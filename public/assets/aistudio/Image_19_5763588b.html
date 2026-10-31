@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#006970", "on-primary-fixed-variant": "#004f54", "surface-container-lowest": "#090e17", "on-secondary-fixed-variant": "#004b74", "inverse-surface": "#dee2f0", "primary": "#dbfcff", "surface-container": "#1a2029", "secondary": "#94ccff", "tertiary": "#d3fff7", "on-tertiary-fixed": "#00201d", "outline": "#849495", "on-tertiary-container": "#006b62", "error-container": "#93000a", "on-primary": "#00363a", "surface-container-high": "#252a34", "surface-tint": "#00dbe9", "surface-dim": "#0e141d", "secondary-container": "#0378b7", "on-primary-fixed": "#002022", "tertiary-container": "#7fecde", "on-error-container": "#ffdad6", "inverse-primary": "#006970", "error": "#ffb4ab", "surface-bright": "#343944", "on-secondary-fixed": "#001d32", "on-surface": "#dee2f0", "on-secondary": "#003352", "on-background": "#dee2f0", "tertiary-fixed": "#89f5e7", "surface": "#0e141d", "primary-fixed": "#7df4ff", "surface-container-highest": "#30353f", "on-error": "#690005", "on-surface-variant": "#b9cacb", "tertiary-fixed-dim": "#6bd8cb", "secondary-fixed-dim": "#94ccff", "surface-variant": "#30353f", "inverse-on-surface": "#2b313b", "on-tertiary-fixed-variant": "#005049", "outline-variant": "#3b494b", "surface-container-low": "#161c25", "background": "#0e141d", "primary-container": "#00f0ff", "on-secondary-container": "#f5f8ff", "secondary-fixed": "#cde5ff", "primary-fixed-dim": "#00dbe9", "on-tertiary": "#003732" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "margin-desktop": "3rem", "space-xl": "2.5rem", "margin": "2rem", "gutter": "1.5rem", "space-md": "1rem", "space-2xl": "4rem", "gutter-lg": "2rem" }, "fontFamily": { "headline-lg": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "label-caps": [ "JetBrains Mono" ], "body-sm": [ "Hanken Grotesk" ], "telemetry-value-lg": [ "JetBrains Mono" ], "headline-md": [ "Space Grotesk" ], "label-sm": [ "Hanken Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "body-md": [ "Hanken Grotesk" ], "body-lg": [ "Hanken Grotesk" ], "display-hero": [ "Space Grotesk" ], "telemetry-value-md": [ "JetBrains Mono" ] }, "fontSize": { "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "500" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "telemetry-value-lg": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "telemetry-value-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="che project logo.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XFosMbKlhrLKkfME6e-ea5sRb-KYrHRduRCdWGJfjh4iQHzGYjpVW6eyhMrnVtDDhSnuKDm7qm75VeaOyDfhZOFd-4GlSmueWgdA7EzR8eZRh9N_LU_7px2ufcCUA3qNAZeBRGQjE3Ydpcb6nkuyESeF6pWVMc7GJKlemUy0xhX1zOSXUIf83fYmfEQw22VwyzLgRSZR3-lAJdxN77D5btkbpcER7-MCcAQdftI_I37-KZHoGDo8JCV6_kFbsqL_t2hjShPA82auY"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">Neerwise</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider hidden sm:inline-block">Know Your Water. Save Every Drop.</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.35)]"><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="dashboard" href="#">Dashboard</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="water-usage-tracker" href="#">Water Usage Tracker</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="analytics-&amp;-insights" href="#">Analytics &amp; Insights</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="water-saving-coach" href="#">Water Saving Coach</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="challenges-&amp;-achievements" href="#">Challenges &amp; Achievements</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="profile" href="#">Profile</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="settings" href="#">Settings</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all rounded-lg" data-path="about-neerwise" href="#">About Neerwise</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps text-primary-fixed uppercase">Grid Sync Active</span></div><button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-label-sm font-semibold hover:bg-primary-fixed-dim transition-all shadow-[0_0_16px_rgba(0,240,255,0.3)]" type="button"><span class="material-symbols-outlined text-[16px]">water_drop</span><span>Quick Log</span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 flex-1 bg-background"><div class="flex flex-col w-full">
+<!-- Toast Notification Container -->
+<div class="fixed bottom-8 right-8 z-50 flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-surface-container-high text-on-surface shadow-[0_0_24px_rgba(0,240,255,0.25)] border-l-4 border-primary-container transition-all duration-300 translate-y-24 opacity-0 pointer-events-none" id="save-toast">
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-sm font-semibold text-primary">Preferences Synced</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">NODE #VNC-104-T UPDATED SUCCESSFULLY</span>
+</div>
+</div>
+<!-- Main View Container -->
+<div class="w-full max-w-[1600px] mx-auto px-space-md sm:px-margin-desktop py-space-xl">
+<!-- Top Action & Title Header (No duplication of shell logo) -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs w-fit px-space-sm py-[3px] rounded-full bg-surface-container-high shadow-inner">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">System Configuration • Firmware v4.8 • Node #VNC-104-T</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Platform &amp; Telemetry Settings</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Configure household conservation thresholds, acoustic IoT pulse sensitivity, automated solenoid fail-safes, municipal zero-knowledge verification, and cryptographic tokens.</p>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm font-medium transition-all shadow-sm" id="reset-defaults-btn" type="button">
+          Reset to Factory Baselines
+        </button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-label-sm font-bold shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:shadow-[0_0_28px_rgba(0,240,255,0.65)] hover:bg-primary-fixed transition-all" id="save-settings-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Save Preferences</span>
+</button>
+</div>
+</div>
+<!-- Layout Grid: Quick Navigation Rail + Settings Panels -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Side Jump Navigation Pill Deck -->
+<div class="lg:col-span-3 sticky top-28 flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Subsystems</span>
+<span class="font-label-caps text-[10px] text-primary-fixed bg-surface-container-high px-space-xs py-0.5 rounded">6 Online</span>
+</div>
+<nav class="flex flex-col gap-1 text-left font-body-sm text-body-sm">
+<a class="group flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface bg-surface-container-high hover:bg-surface-container transition-all" href="#section-targets">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary-container">water_drop</span>
+<span>Water Targets &amp; Units</span>
+</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</a>
+<a class="group flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#section-telemetry">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">sensors</span>
+<span>Acoustic IoT &amp; Valves</span>
+</span>
+<span class="text-label-caps text-on-surface-variant text-[10px]">0.5s</span>
+</a>
+<a class="group flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#section-alerts">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span>AI Coach &amp; Alerts</span>
+</span>
+<span class="text-label-caps text-on-surface-variant text-[10px]">3 Active</span>
+</a>
+<a class="group flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#section-privacy">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">assured_workload</span>
+<span>Grid Benchmarking</span>
+</span>
+<span class="text-label-caps text-tertiary-fixed text-[10px]">ZK Proof</span>
+</a>
+<a class="group flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" href="#section-security">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+<span>Tokens &amp; 2FA Auth</span>
+</span>
+<span class="material-symbols-outlined text-primary text-[14px]">lock</span>
+</a>
+<a class="group flex items-center justify-between px-space-sm py-2.5 rounded-lg text-error hover:bg-error-container/20 transition-all" href="#section-danger">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span>Destructive Controls</span>
+</span>
+<span class="font-label-caps text-[10px] uppercase">Danger</span>
+</a>
+</nav>
+<!-- Node Telemetry Diagnostics Quickview -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-caps text-label-caps text-on-surface-variant">
+<span>Acoustic Waveguide</span>
+<span class="text-primary-fixed">99.98% SNR</span>
+</div>
+<!-- Sparkline representation -->
+<svg class="w-full h-8 overflow-visible" preserveaspectratio="none" viewbox="0 0 100 24">
+<path class="text-primary-container opacity-70" d="M0,18 Q12,6 25,12 T50,8 T75,16 T100,6" fill="none" stroke="currentColor" stroke-width="1.75"></path>
+<circle class="fill-primary-container" cx="100" cy="6" r="2"></circle>
+</svg>
+<span class="font-telemetry-value-md text-[11px] text-on-surface-variant">Signal Lock: 14.2 kHz Inflow Band</span>
+</div>
+</div>
+<!-- Settings Configuration Stack -->
+<div class="lg:col-span-9 flex flex-col gap-space-xl">
+<!-- SECTION A: Daily Water Targets & Units -->
+<section class="flex flex-col gap-space-lg p-space-lg sm:p-space-xl rounded-xl bg-surface-container-lowest shadow-md" id="section-targets">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Daily Water Targets &amp; Calibration</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant">CONSUMPTION BASELINES AND MEASUREMENT ENGINE</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded font-label-caps text-label-caps bg-secondary-container/40 text-secondary-fixed">Calibration Tier A</span>
+</div>
+<!-- Unit Selector -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-container">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-lg text-on-surface font-semibold">Measurement Unit System</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Determines volumetric flow metrics across all charts, widgets, and reports.</span>
+</div>
+<div class="inline-flex p-1 rounded-lg bg-surface-container-low">
+<button class="px-space-md py-1.5 rounded font-label-caps text-label-sm font-semibold bg-primary-container text-on-primary-container transition-all shadow-sm" id="unit-liters" type="button">
+                Liters (L, Metric Standard)
+              </button>
+<button class="px-space-md py-1.5 rounded font-label-caps text-label-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" id="unit-gallons" type="button">
+                Gallons (US Gal)
+              </button>
+</div>
+</div>
+<!-- Household Target & Strictness -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Daily Household Target Slider -->
+<div class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container gap-space-md">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Household Daily Target</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Allocated volumetric goal per occupant/day.</p>
+</div>
+<div class="flex items-baseline gap-1 text-right">
+<span class="font-telemetry-value-lg text-telemetry-value-lg text-primary-container" id="target-value-display">135</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant" id="target-unit-display">L/day</span>
+</div>
+</div>
+<!-- Range Control -->
+<div class="flex flex-col gap-2">
+<input class="w-full h-1.5 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary-container" id="daily-target-range" max="300" min="60" type="range" value="135"/>
+<div class="flex justify-between font-label-caps text-[10px] text-on-surface-variant">
+<span>60 L (Stewardship)</span>
+<span>150 L (Nominal)</span>
+<span>300 L (High)</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Threshold Strictness -->
+<div class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container gap-space-md">
+<div>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Conservation Target Strictness</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Shifts Water Score penalty curves for sudden anomalies.</p>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="strictness-btn py-2 px-space-xs rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface text-center font-label-caps text-label-sm font-medium transition-all" data-level="tolerant" type="button">
+                  Tolerant<br/><span class="text-[10px] opacity-70">+15% dev</span>
+</button>
+<button class="strictness-btn py-2 px-space-xs rounded bg-primary-container text-on-primary-container text-center font-label-caps text-label-sm font-bold shadow-[0_0_12px_rgba(0,240,255,0.3)] transition-all" data-level="nominal" type="button">
+                  Nominal<br/><span class="text-[10px] opacity-90">0% dev</span>
+</button>
+<button class="strictness-btn py-2 px-space-xs rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface text-center font-label-caps text-label-sm font-medium transition-all" data-level="rigorous" type="button">
+                  Rigorous<br/><span class="text-[10px] opacity-70">-15% dev</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Climate Auto-Adjustment Switch -->
+<div class="flex items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-container-low">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">partly_cloudy_day</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Climate &amp; Seasonal Auto-Adjustment</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dynamically recalibrates targets against NOAA real-time drought index, regional evapotranspiration rates, and heat alerts.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer select-none">
+<input checked="" class="sr-only peer" id="toggle-climate" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container peer-checked:after:bg-on-primary-container"></div>
+</label>
+</div>
+</section>
+<!-- SECTION B: Acoustic IoT Sensors & Telemetry Stream -->
+<section class="flex flex-col gap-space-lg p-space-lg sm:p-space-xl rounded-xl bg-surface-container-lowest shadow-md" id="section-telemetry">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">graphic_eq</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Acoustic IoT Sensors &amp; Telemetry Stream</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant">ULTRASONIC TRANSDUCERS &amp; AUTOMATED SHUTOFF MATRIX</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-caps text-[11px] text-tertiary-fixed bg-tertiary-container/20 px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-pulse"></span>
+              Flow Solenoid Valve #1: OPEN
+            </div>
+</div>
+<!-- Radio Options: Sampling Frequency -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Waveguide Sampling Cadence</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<label class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-sm font-semibold text-primary-container">Continuous Ultra-Low</span>
+<input checked="" class="w-4 h-4 accent-primary-container" name="sampling_rate" type="radio" value="continuous"/>
+</div>
+<div class="mt-space-sm">
+<span class="font-telemetry-value-md text-telemetry-value-md text-on-surface">0.5s</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Recommended for precision acoustic leak detection down to dripping taps.</p>
+</div>
+</label>
+<label class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface">Standard Flow</span>
+<input class="w-4 h-4 accent-primary-container" name="sampling_rate" type="radio" value="standard"/>
+</div>
+<div class="mt-space-sm">
+<span class="font-telemetry-value-md text-telemetry-value-md text-on-surface">5.0s</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Balanced interval for municipal reporting and daily household habits.</p>
+</div>
+</label>
+<label class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface">Eco-Battery Standby</span>
+<input class="w-4 h-4 accent-primary-container" name="sampling_rate" type="radio" value="eco"/>
+</div>
+<div class="mt-space-sm">
+<span class="font-telemetry-value-md text-telemetry-value-md text-on-surface">30.0s</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Preserves external node reserve cells during power grid instability.</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Micro-Leak Sensitivity Threshold -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<div>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Micro-Leak Acoustic Trigger Threshold</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Flags weeping toilet flappers, pinhole copper pin-leaks, and slow garden seeps.</p>
+</div>
+<span class="font-telemetry-value-md text-body-lg text-primary-fixed bg-surface-container-lowest px-space-sm py-1 rounded">0.5 L / hour (High Sensitivity)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full w-[35%] rounded-full"></div>
+</div>
+<div class="flex justify-between font-label-caps text-[10px] text-on-surface-variant">
+<span>0.1 L/hr (Ultra-Fine Acoustic)</span>
+<span>0.5 L/hr (Recommended)</span>
+<span>2.5 L/hr (Coarse Macro-bursts)</span>
+</div>
+</div>
+<!-- Automated Emergency Shutoff & Hardware Diagnostic -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Toggle Card -->
+<div class="md:col-span-8 flex items-center justify-between p-space-md rounded-lg bg-surface-container-low">
+<div class="flex flex-col gap-1 pr-space-sm">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Automated Smart Valve Nocturnal Shutoff</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Auto-closes main inflow solenoid if sustained unbroken flow exceeds 45 minutes during quiet hours (01:00 – 05:00 UTC).</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer select-none">
+<input checked="" class="sr-only peer" id="toggle-shutoff" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container peer-checked:after:bg-on-primary-container"></div>
+</label>
+</div>
+<!-- Diagnostic Valve Test Trigger -->
+<div class="md:col-span-4 flex flex-col justify-center p-space-md rounded-lg bg-surface-container gap-space-xs text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">HARDWARE DIAGNOSTIC</span>
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-semibold transition-all inline-flex items-center justify-center gap-space-xs" id="valve-test-btn" type="button">
+<span class="material-symbols-outlined text-secondary text-[18px]">build_circle</span>
+<span>Test Solenoid Valve</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION C: Notifications & AI Hydro-Coach Alerts -->
+<section class="flex flex-col gap-space-lg p-space-lg sm:p-space-xl rounded-xl bg-surface-container-lowest shadow-md" id="section-alerts">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Notifications &amp; AI Hydro-Coach Intelligence</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant">MICRO-ROUTINE ADVICE &amp; DISPATCH CHANNELS</span>
+</div>
+</div>
+<!-- Notification Channel Pills -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Active Transmission Channels</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-space-sm p-space-md rounded-lg bg-surface-container cursor-pointer">
+<input checked="" class="w-4 h-4 accent-primary-container rounded" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Push Alerts</span>
+<span class="font-label-caps text-[11px] text-on-surface-variant">Mobile &amp; Browser Hub</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-space-md rounded-lg bg-surface-container cursor-pointer">
+<input checked="" class="w-4 h-4 accent-primary-container rounded" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Email Digests</span>
+<span class="font-label-caps text-[11px] text-on-surface-variant">Weekly Audit Reports</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-space-md rounded-lg bg-surface-container cursor-pointer">
+<input checked="" class="w-4 h-4 accent-primary-container rounded" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">SMS Critical Line</span>
+<span class="font-label-caps text-[11px] text-on-surface-variant">Emergency Burst Telemetry</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Alert Triggers Multi-stack -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-all">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">crisis_alert</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Micro-Anomaly &amp; Runaway Flow Spikes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant telemetry ping if draw exceeds 15 continuous minutes without pressure break.</span>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary-container" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-all">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">summarize</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Daily Water Score Digest (20:00 UTC)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dispatches end-of-day conservation grade and neighborhood comparison telemetry.</span>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary-container" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-all">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">psychology</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">AI Hydro-Coach Proactive Recommendations</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Suggests tailored timing optimizations based on morning vs. evening shower thermal dissipation.</span>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary-container" type="checkbox"/>
+</div>
+</div>
+</section>
+<!-- SECTION D: Privacy, Data Security & Municipal Grid Sharing -->
+<section class="flex flex-col gap-space-lg p-space-lg sm:p-space-xl rounded-xl bg-surface-container-lowest shadow-md" id="section-privacy">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Data Privacy &amp; Municipal Grid Sharing</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant">ZERO-KNOWLEDGE ATTESTATIONS &amp; ECO-TARIFF REBATES</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Municipal Toggle -->
+<div class="flex items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-container">
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Municipal Grid Benchmarking Consent</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Contribute randomized, anonymized consumption telemetry to the Sector 4 Community Conservation League dashboard.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer select-none">
+<input checked="" class="sr-only peer" id="toggle-municipal" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container peer-checked:after:bg-on-primary-container"></div>
+</label>
+</div>
+<!-- Cryptographic Proof Toggle -->
+<div class="flex items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-container">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Cryptographic Proof of Stewardship (ZK-Proofs)</span>
+<span class="px-space-xs py-0.5 rounded text-[10px] font-label-caps bg-tertiary-container/30 text-tertiary font-bold">Tax Rebate Eligible</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calculates zero-knowledge hashes confirming adherence to strict drought conservation targets for direct municipal water bill deductions without revealing personal routines.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer select-none">
+<input checked="" class="sr-only peer" id="toggle-zk" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container peer-checked:after:bg-on-primary-container"></div>
+</label>
+</div>
+<!-- Cloud Node Infrastructure Status -->
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">cloud_sync</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Distributed Cloud Replication Engine</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Active • Encrypted TLS 1.3 / AES-256 GCM Vault</span>
+</div>
+</div>
+<span class="font-label-caps text-[11px] text-primary-fixed bg-surface-container px-space-sm py-1 rounded">SYNC: 1.2s AGO</span>
+</div>
+</div>
+</section>
+<!-- SECTION E: Security & Credentials -->
+<section class="flex flex-col gap-space-lg p-space-lg sm:p-space-xl rounded-xl bg-surface-container-lowest shadow-md" id="section-security">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">lock_person</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Security &amp; Hardware Tokens</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant">NODE ENCRYPTION &amp; OPERATOR PRIVILEGES</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-caps text-[11px]">
+<span class="material-symbols-outlined text-primary text-[14px]">key</span>
+<span>2FA: FIDO2 Hardware Key Enabled</span>
+</div>
+</div>
+<!-- Password Reset Subform -->
+<div class="flex flex-col gap-space-md p-space-md rounded-lg bg-surface-container">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Update Master Telemetry Passphrase</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Current Password</label>
+<input class="px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container font-telemetry-value-md text-body-sm" placeholder="••••••••••••" type="password"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant">New Password</label>
+<input class="px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container font-telemetry-value-md text-body-sm" placeholder="At least 12 chars" type="password"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Confirm New Password</label>
+<input class="px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container font-telemetry-value-md text-body-sm" placeholder="At least 12 chars" type="password"/>
+</div>
+</div>
+<div class="flex justify-end">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-semibold transition-all" type="button">
+                Update Security Token
+              </button>
+</div>
+</div>
+<!-- Active Sessions List -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface">Authenticated Telemetry Consoles</span>
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">laptop_chromebook</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Desktop Workstation — Chrome 124 (macOS)</span>
+<span class="px-1.5 py-0.5 rounded font-label-caps text-[10px] bg-primary/10 text-primary">Current Session</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">IP: 198.51.100.44 • Austin, TX • Active Now</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface text-label-caps text-[11px] font-semibold" type="button">Inspect</button>
+</div>
+<div class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">phone_iphone</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Mobile Telemetry Node — iOS App</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">IP: 203.0.113.19 • Austin, TX • Active 2h ago</span>
+</div>
+</div>
+<button class="text-error hover:underline text-label-caps text-[11px] font-semibold" type="button">Revoke</button>
+</div>
+</div>
+</section>
+<!-- SECTION F: Danger Zone / Destructive Controls -->
+<section class="flex flex-col gap-space-lg p-space-lg sm:p-space-xl rounded-xl bg-surface-container-lowest shadow-md" id="section-danger">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-error">Danger Zone &amp; Hardware Lifecycle</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant">DESTRUCTIVE ACTIONS &amp; IRREVERSIBLE DATA EXPUNGEMENT</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Purge Cache Card -->
+<div class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Purge Local Historical Telemetry Cache</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clears indexed sub-second flow waveforms stored locally on this machine's IndexedDB storage. Cloud aggregate statistics remain intact.</p>
+</div>
+<button class="w-fit px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-semibold transition-all" id="purge-cache-btn" type="button">
+                Purge Waveform Cache
+              </button>
+</div>
+<!-- Decommission Node Card -->
+<div class="flex flex-col justify-between p-space-md rounded-lg bg-error-container/15 gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-headline-sm text-body-md text-error font-semibold">Decommission Node &amp; Delete Account</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Revokes ultrasonic sensor tokens, unlinks the smart solenoid valve hardware, and purges all historical water consumption profiles.</p>
+</div>
+<button class="w-fit px-space-md py-2 rounded-lg bg-error-container text-on-error font-body-sm text-body-sm font-semibold hover:opacity-90 transition-all" id="decommission-btn" type="button">
+                Decommission Node #VNC-104-T
+              </button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // 1. Highlight 'Settings' in the Shell Navigation Bar
+    const navLinks = document.querySelectorAll('header nav a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('data-path') === 'settings') {
+        link.className = 'px-space-sm py-space-xs font-body-sm text-body-sm bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.35)] transition-all';
+      }
+    });
+
+    // 2. Unit System Toggle (Liters vs Gallons)
+    const unitLiters = document.getElementById('unit-liters');
+    const unitGallons = document.getElementById('unit-gallons');
+    const targetDisplay = document.getElementById('target-value-display');
+    const targetUnitDisplay = document.getElementById('target-unit-display');
+    const targetRange = document.getElementById('daily-target-range');
+
+    let currentUnit = 'liters';
+
+    function setUnit(unit) {
+      currentUnit = unit;
+      if (unit === 'liters') {
+        unitLiters.className = 'px-space-md py-1.5 rounded font-label-caps text-label-sm font-semibold bg-primary-container text-on-primary-container transition-all shadow-sm';
+        unitGallons.className = 'px-space-md py-1.5 rounded font-label-caps text-label-sm font-medium text-on-surface-variant hover:text-on-surface transition-all';
+        targetUnitDisplay.textContent = 'L/day';
+        targetRange.min = 60;
+        targetRange.max = 300;
+        targetRange.value = 135;
+        targetDisplay.textContent = '135';
+      } else {
+        unitGallons.className = 'px-space-md py-1.5 rounded font-label-caps text-label-sm font-semibold bg-primary-container text-on-primary-container transition-all shadow-sm';
+        unitLiters.className = 'px-space-md py-1.5 rounded font-label-caps text-label-sm font-medium text-on-surface-variant hover:text-on-surface transition-all';
+        targetUnitDisplay.textContent = 'gal/day';
+        targetRange.min = 15;
+        targetRange.max = 80;
+        targetRange.value = 35;
+        targetDisplay.textContent = '35';
+      }
+    }
+
+    if (unitLiters && unitGallons) {
+      unitLiters.addEventListener('click', () => setUnit('liters'));
+      unitGallons.addEventListener('click', () => setUnit('gallons'));
+    }
+
+    if (targetRange && targetDisplay) {
+      targetRange.addEventListener('input', (e) => {
+        targetDisplay.textContent = e.target.value;
+      });
+    }
+
+    // 3. Strictness Selector Buttons
+    const strictnessButtons = document.querySelectorAll('.strictness-btn');
+    strictnessButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        strictnessButtons.forEach(b => {
+          b.className = 'strictness-btn py-2 px-space-xs rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface text-center font-label-caps text-label-sm font-medium transition-all';
+        });
+        btn.className = 'strictness-btn py-2 px-space-xs rounded bg-primary-container text-on-primary-container text-center font-label-caps text-label-sm font-bold shadow-[0_0_12px_rgba(0,240,255,0.3)] transition-all';
+      });
+    });
+
+    // 4. Save Settings Notification Trigger
+    const saveBtn = document.getElementById('save-settings-btn');
+    const toast = document.getElementById('save-toast');
+
+    function triggerToast(message) {
+      if (!toast) return;
+      if (message) {
+        const subtitle = toast.querySelector('.text-label-caps');
+        if (subtitle) subtitle.textContent = message;
+      }
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        triggerToast('NODE #VNC-104-T UPDATED SUCCESSFULLY');
+      });
+    }
+
+    // 5. Solenoid Valve Test Simulation
+    const valveBtn = document.getElementById('valve-test-btn');
+    if (valveBtn) {
+      valveBtn.addEventListener('click', () => {
+        const originalText = valveBtn.innerHTML;
+        valveBtn.innerHTML = '<span class="material-symbols-outlined text-primary text-[18px] animate-spin">refresh</span><span>Cycling Solenoid...</span>';
+        valveBtn.disabled = true;
+        setTimeout(() => {
+          valveBtn.innerHTML = '<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">check_circle</span><span>Valve Verified OK (3.2 bar)</span>';
+          setTimeout(() => {
+            valveBtn.innerHTML = originalText;
+            valveBtn.disabled = false;
+          }, 2400);
+        }, 1800);
+      });
+    }
+
+    // 6. Reset to Defaults action
+    const resetBtn = document.getElementById('reset-defaults-btn');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        setUnit('liters');
+        strictnessButtons.forEach(b => {
+          if (b.getAttribute('data-level') === 'nominal') {
+            b.className = 'strictness-btn py-2 px-space-xs rounded bg-primary-container text-on-primary-container text-center font-label-caps text-label-sm font-bold shadow-[0_0_12px_rgba(0,240,255,0.3)] transition-all';
+          } else {
+            b.className = 'strictness-btn py-2 px-space-xs rounded bg-surface-container-low text-on-surface-variant hover:text-on-surface text-center font-label-caps text-label-sm font-medium transition-all';
+          }
+        });
+        triggerToast('FACTORY CALIBRATION RESTORED');
+      });
+    }
+
+    // 7. Purge local cache
+    const purgeBtn = document.getElementById('purge-cache-btn');
+    if (purgeBtn) {
+      purgeBtn.addEventListener('click', () => {
+        purgeBtn.textContent = 'Purging...';
+        setTimeout(() => {
+          purgeBtn.textContent = 'Cache Purged (0 Bytes)';
+          setTimeout(() => {
+            purgeBtn.textContent = 'Purge Waveform Cache';
+          }, 2500);
+        }, 800);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] mt-auto"><div class="w-full px-margin-desktop py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">Neerwise</span><span class="text-on-surface-variant font-body-sm text-body-sm">Telemetry Platform</span></div><div class="flex items-center gap-space-lg font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" data-path="about-neerwise" href="#">About</a><a class="hover:text-primary transition-colors" data-path="settings" href="#">Security</a><a class="hover:text-primary transition-colors" data-path="analytics-&amp;-insights" href="#">Compliance Metrics</a></div><div class="font-label-caps text-label-caps text-on-surface-variant">© 2025 Neerwise Systems Inc. All rights reserved.</div></div></footer></body></html>
